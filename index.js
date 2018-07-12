@@ -11,7 +11,7 @@ const options = {
 };
 
 //const corsOptions = {origin: 'https://peacefulsudoku.com'}
-const corsOptions = {origin: "*"}
+const corsOptions = {origin: "https://peacefulsudoku.com"}
 
 app.get('/', cors(corsOptions), (req, res) => {
   try {
