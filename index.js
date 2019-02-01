@@ -1,6 +1,5 @@
 const https = require('https');
 const fs = require('fs');
-//const gen = require('./generator');
 const gen = require('sudoku-generator');
 const express = require('express');
 const app = express();
@@ -11,8 +10,7 @@ const options = {
   cert: fs.readFileSync('/var/www/cert.pem'),
 };
 
-//const corsOptions = {origin: '*'}
-const corsOptions = {origin: "https://peacefulsudoku.com"}
+const corsOptions = {origin: "https://peacefulsudoku.com"};
 
 app.get('/', cors(corsOptions), (req, res) => {
   try {
