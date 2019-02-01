@@ -4,7 +4,6 @@ const gen = require('sudoku-generator');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const config = require('./.env');
 require('dotenv').config();
 
 // change this to desired origins
