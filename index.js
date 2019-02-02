@@ -6,7 +6,6 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config({path: process.env.PWD + '/.env'});
 
-// change this to desired origins
 const allowedOrigins = "https://peacefulsudoku.com";
 
 const options = {
