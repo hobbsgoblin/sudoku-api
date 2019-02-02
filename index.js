@@ -4,10 +4,10 @@ const gen = require('sudoku-generator');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-require('dotenv').config();
+require('dotenv').config({path: process.env.PWD + '/.env'});
 
 // change this to desired origins
-const allowedOrigins = ["https://peacefulsudoku.com"];
+const allowedOrigins = "https://peacefulsudoku.com";
 
 const options = {
   key: fs.readFileSync(process.env.PRIVATE_KEY_PATH),
